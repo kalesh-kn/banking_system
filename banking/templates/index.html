@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banking System</title>
+</head>
+<body>
+    <h1>Welcome to the Banking System</h1>
+    <h2>Create Account</h2>
+    <form action="/create_account" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+        <button type="submit">Create Account</button>
+    </form>
+
+    <h2>Deposit Money</h2>
+    <form action="/deposit" method="post">
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" required>
+        <label for="amount">Amount:</label>
+        <input type="number" step="0.01" id="amount" name="amount" required>
+        <button type="submit">Deposit</button>
+    </form>
+
+    <h2>Withdraw Money</h2>
+    <form action="/withdraw" method="post">
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" required>
+        <label for="amount">Amount:</label>
+        <input type="number" step="0.01" id="amount" name="amount" required>
+        <button type="submit">Withdraw</button>
+    </form>
+
+    <h2>Check Balance</h2>
+    <form action="/balance" method="post">
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" required>
+        <button type="submit">Check Balance</button>
+    </form>
+</body>
+</html>

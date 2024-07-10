@@ -1,0 +1,18 @@
+#account.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Details</title>
+</head>
+<body>
+    <h1>Account Details</h1>
+    <p>Account Number: {{ account.account_number }}</p>
+    <p>Name: {{ account.name }}</p>
+    <p>Phone Number: {{ account.phone }}</p>
+    <p>Balance: {{ account.balance }}</p>
+    {% if error %}
+    <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
